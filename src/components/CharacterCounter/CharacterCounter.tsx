@@ -41,7 +41,7 @@ export default function CharacterCounter({
       <div className="card">
         <StatsDisplay stats={stats} showReadingTime={true} />
 
-        <div className="hint">Min: {minWords} | Max: {maxWords}</div>
+        <div className="hint">Min: <span className="hint-value">{minWords}</span> | Max: <span className="hint-value">{maxWords}</span></div>
 
         <div
           className="bar"

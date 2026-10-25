@@ -15,16 +15,16 @@ export default function StatsDisplay({
   return (
     <div className="stats">
       <div className="stat">
-        <span className="stat-label">Characters</span>
+        <span className="stat-label">Characters: </span>
         <span className="stat-value">{stats.characterCount.toLocaleString()}</span>
       </div>
       <div className="stat">
-        <span className="stat-label">Words</span>
+        <span className="stat-label">Words: </span>
         <span className="stat-value">{stats.wordCount.toLocaleString()}</span>
       </div>
       {showReadingTime && (
         <div className="stat">
-          <span className="stat-label">Reading Time</span>
+          <span className="stat-label">Reading Time: </span>
           <span className="stat-value">{formatTime(stats.readingTime)}</span>
         </div>
       )}
