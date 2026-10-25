@@ -5,13 +5,9 @@ function App() {
   
 
   return (
-    <>
-      <h1>Character Counter</h1>
-    <div>
-    <CharacterCounter />
-    </div>
-      
-    </>
+    <main className="page">
+      <CharacterCounter minWords={25} maxWords={250} targetReadingTime={2}/>
+    </main>
   )
 }
 

@@ -17,7 +17,7 @@ function calculateStats(text: string): TextStats {
 
 export default function CharacterCounter({
   minWords = 25,
-  maxWords = 100,
+  maxWords = 250,
   targetReadingTime,
 }: CharacterCounterProps) {
   const [stats, setStats] = useState<TextStats>(calculateStats(""));
