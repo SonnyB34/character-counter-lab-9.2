@@ -52,11 +52,11 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
    I wrappeed the handler in useCallback so it isnt recreated on every render.
 
 
-4 What challenges did you face when implementing the statistics calculations?
+4. What challenges did you face when implementing the statistics calculations?
 
-  - The progress bar was a challenge. I compared the word count to minWords or maxWords to pick red green or black status.
+    - The progress bar was a challenge. I compared the word count to minWords or maxWords to pick red green or black status.
 
-  - Leading and trailing spaces was a challenge but I ended up using trim() to remove them before counting.
+    - Leading and trailing spaces was a challenge but I ended up using trim() to remove them before counting.
 
-  -The overall project was a bit challenging I refered to documentation and definitely learned alot.
+    - The overall project was a bit challenging I refered to documentation and definitely learned alot.
     
