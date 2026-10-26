@@ -3,7 +3,7 @@ import TextInput from '../TextInput/TextInput';
 import StatsDisplay from '../StatsDisplay/StatsDisplay';
 import type { CharacterCounterProps, TextStats } from '../../types';
 
-const WORDS_PER_MINUTE = 200;
+const WORDS_PER_MINUTE = 250;
 
 function calculateStats(text: string): TextStats {
   const trimmed = text.trim();
@@ -16,8 +16,8 @@ function calculateStats(text: string): TextStats {
 }
 
 export default function CharacterCounter({
-  minWords = 20,
-  maxWords = 100,
+  minWords = 25,
+  maxWords = 500,
   targetReadingTime,
 }: CharacterCounterProps) {
   const [stats, setStats] = useState<TextStats>(calculateStats(''));
