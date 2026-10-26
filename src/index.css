@@ -1,3 +1,9 @@
+h1 {
+    text-align: center;
+    color: #f75f1c;
+    font-size: 48px;
+}
+
 body {
     margin: 0;
     background: #1a1a1a;
@@ -15,6 +21,7 @@ body {
     display: grid;
     gap: 16px;
     color: #881ee4;
+    font-weight: 600;
 }
 
 .text-input {
@@ -23,7 +30,7 @@ body {
     min-height: 160px;
     padding: 16px;
     background: #85e21f;
-    border: 1px solid #f75f1c;
+    border: 1px solid #881ee4;
     border-radius: 10px;
     font: inherit;
     font-size: 16px;
@@ -52,7 +59,7 @@ body {
 }
 
 .stat-label {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .stat-value {
@@ -71,3 +78,48 @@ body {
     color: #000000;
 }
 
+.bar {
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.bar-fill {
+    height: 100%;
+    transition: width .2s;
+}
+
+.bar-fill.low {
+    background: #dc2626
+}
+
+.bar-fill.good {
+    background: #85e21f;
+}
+
+.bar-fill.high {
+    background: #000000;
+}
+
+.message {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.message.low {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.message.good {
+    color: #85e21f;
+    font-weight: bolder;
+}
+
+.message.high {
+    color: #000000;
+    font-weight: 600;
+}
